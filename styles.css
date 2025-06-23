@@ -7,6 +7,8 @@
 body {
   font-family: Arial, sans-serif;
   padding: 10px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav ul {
@@ -22,9 +24,18 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 .splash {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
   margin: 20px 0;
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 .content-container {
@@ -37,11 +48,30 @@ nav a {
 .content-container p {
   flex: 1;
   min-width: 250px;
+  background-color: #fafafa;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
 .learn-more {
   margin: 20px 0;
   text-align: center;
+}
+
+.learn-more a {
+  display: inline-block;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more a:hover {
+  background-color: #444;
 }
 
 .about-container {
